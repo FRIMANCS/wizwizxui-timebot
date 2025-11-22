@@ -372,6 +372,9 @@ $buttonValues = [
     'apple_manage'=>"✏️ Edit / ❌ Remove Apple ID",
     'apple'=>"🛒 Apple ID",
     'myapple'=>"🍎 Apple ID",
+    'chatgpt' => "💡 ChatGPT", 
+    'chatgpt_add' => "➕ افزودن ChatGPT",
+    'chatgpt_manage' => "🛠️ مدیریت ChatGPT",
     'server_discount'=>"روی سرور"
 ];
 ?>
