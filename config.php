@@ -357,6 +357,13 @@ function getAdminKeys(){
             ],
 					    [ ['text' => $buttonValues['apple_add'], 'callback_data' => 'admin_add_apple']],
                    [ ['text' => $buttonValues['apple_manage'], 'callback_data' => 'admin_manage_apple']],
+					   [
+    ['text' => $buttonValues['chatgpt_add'], 'callback_data' => 'admin_add_chatgpt']
+],
+[
+    ['text' => $buttonValues['chatgpt_manage'], 'callback_data' => 'admin_manage_chatgpt']
+],
+
         [['text'=>$buttonValues['back_to_main'],'callback_data'=>"mainMenu"]],
     ]]);
     
