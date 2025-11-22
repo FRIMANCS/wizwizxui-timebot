@@ -57,6 +57,20 @@ function editText($msgId, $txt, $key = null, $parse = null, $ci = null){
         'reply_markup' =>  $key
         ]);
 }
+function delPrevMessages($count = 2, $chat_id = null){
+    global $from_id, $message_id;
+    
+    $chat_id = $chat_id ?? $from_id;
+    
+    // حذف پیام‌ها از جدیدترین به قدیمی‌تر
+    for($i = 1; $i <= $count; $i++){
+        $msg_id = $message_id - $i; // پیام‌های قبلی
+        bot('deleteMessage', [
+            'chat_id' => $chat_id,
+            'message_id' => $msg_id
+        ]);
+    }
+}
 function delMessage($msg = null, $chat_id = null){
     global $from_id, $message_id;
     $msg = $msg??$message_id;
