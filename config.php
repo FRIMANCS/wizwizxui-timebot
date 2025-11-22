@@ -266,6 +266,7 @@ function getMainKeys(){
             ($botState['testAccount'] == "on")?[['text'=>$buttonValues['test_account'],'callback_data'=>"getTestAccount"]]:
                 []
             ),
+		[['text'=>$buttonValues['apple'],'callback_data'=>"choose_apple"]],
         [['text'=>$buttonValues['sharj'],'callback_data'=>"increaseMyWallet"]],
         [['text'=>$buttonValues['invite_friends'],'callback_data'=>"inviteFriends"],['text'=>$buttonValues['my_info'],'callback_data'=>"myInfo"]],
         (($botState['sharedExistence'] == "on" && $botState['individualExistence'] == "on")?
