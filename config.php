@@ -340,6 +340,8 @@ function getAdminKeys(){
             ['text'=>$buttonValues['agent_list'],'callback_data'=>"agentsList"],
             ['text'=>'درخواست های رد شده','callback_data'=>"rejectedAgentList"]
             ],
+					    [ ['text' => $buttonValues['apple_add'], 'callback_data' => 'admin_add_apple']],
+                   [ ['text' => $buttonValues['apple_manage'], 'callback_data' => 'admin_manage_apple']],
         [['text'=>$buttonValues['back_to_main'],'callback_data'=>"mainMenu"]],
     ]]);
     
