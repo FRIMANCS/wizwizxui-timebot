@@ -650,7 +650,7 @@ if (strpos($data,'payWalletChatGPT')===0) {
 
     sendMessage($adminMsg, null, "HTML", $admin);
     
-
+}
 
 if (strpos($data, 'send_all_chatgpt_') === 0) {
     $id = str_replace('send_all_chatgpt_', '', $data);
